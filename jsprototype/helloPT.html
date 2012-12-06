@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>HelloPT - Ajax Prototype</title>
+	<script src="prototype.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<script type="text/javascript">
+		
+		new Ajax.PeriodicalUpdater('thetimes', 'gettimePT.js', {
+			method: 'get',
+			insertion: 'bottom',
+			frequency: 10,
+			decay: 1
+		});
+			
+	</script>
+	<div id="thetimes"></div>
+</body>
+</html>
