@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery #3</title>
+	<style type="text/css">
+		#clickbar { cursor: pointer; }
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#clickfoo").click(function(){
+				$("#foo").html("foo-updated");
+			});
+			$("#clickbar").click(function(){
+				$("#bar").html("bar-updated");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="foo">foo</div>
+	<div id="bar">bar</div>
+	<button id="clickfoo" type="button" value="Click Foo">Click Foo</button><br /><br />
+	<a id="clickbar">Click Bar</a>
+</body>
+</html>
